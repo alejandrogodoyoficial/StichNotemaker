@@ -1,0 +1,251 @@
+/* global configurations */
+
+:root{
+	--firstColor: #58355E;
+	--secondColor: #BB0A21;
+	--thirdColor: #06BCC1;
+	--fourthColor: #f22;
+}
+*, *::after, *::before{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-image: url(../img/PikachuAndStich.jpg);
+	background-size: 300px;
+	box-sizing: content-box;
+	font-size: 16px;
+	height: 100vh;
+}
+li{
+	list-style: none;
+}
+li > a{
+	text-decoration: none;
+}
+
+
+/* HOME */
+
+.home{
+	height: 100vh;
+	margin: 0 auto;
+	width: 75vw;
+}
+
+
+/* NAV */
+
+nav{
+	position: relative;
+}
+
+.navName{
+	background: linear-gradient(90deg, #fff0 0%, var(--thirdColor) 50%,  #fff0), linear-gradient(180deg, #fff0 0%, var(--thirdColor) 5%,  #fff0);
+	border-radius: 0 0 20px 20px / 0 0 30px 30px;
+	display: flex;
+	justify-content: space-around;
+}
+.linkName{
+	color: var(--firstColor);
+	display: block;
+	font-size: 2rem;
+	text-shadow: 1px 1px #fffa;
+}
+.linkName:hover{
+	transform: skew(-20deg) scale(1.05);
+}
+.linkName > .one{
+	color: var(--secondColor);
+	font-family: monospace;
+	font-size: 1rem;
+	font-weight: bolder;
+}
+.linkName > .two{
+	font-family: monospace;
+	font-size: 1.7rem;
+}
+.navItems{
+	align-items: center;
+	display: flex;
+	font-family: monospace;
+	justify-content: space-evenly;
+	text-shadow: 1px 1px #fff;
+	width: 30vw;
+}
+.navItems > li > a{
+	font-size: 1.6rem;
+}
+.navItems > li > a:active{
+	color: var(--firstColor);
+}
+.navItems > li:hover{
+	transform: rotateY(45deg) scale(1.4);
+}
+
+@media (min-width: 1200px){
+	img#stich{
+		display: none;
+		position: absolute;
+		right: 1rem;
+		top: 0;
+		width: 3rem;
+}
+	img#stich2{
+		display: none;
+		position: absolute;
+		right: 1rem;
+		top: 0;
+		width: 3rem;
+	}
+}
+@media(max-width: 1200px){
+	[alt="Stich"]{
+		display: inline-block;
+		position: absolute;
+		right: 1rem;
+		top: 0;
+		width: 3rem;
+	}
+	#stich2{
+		display: none;
+		position: absolute;
+		right: 1rem;
+		top: 0;
+		width: 3rem;
+	}
+	.navName{
+		flex-direction: row;
+	}
+	.navItems{
+		display: none;
+		bottom: 0;
+		flex-direction: column;
+		margin: 0 auto;
+	}
+	.navItems li{
+		flex-direction: column;
+		margin-top: 1rem;
+	}
+	.linkName:hover{
+		transform: none;
+	}
+	.navItems > li:hover{
+		transform: none;
+	}
+}
+
+@media(max-width: 680px){
+	[alt="Stich"]{
+		right: 0;
+	}
+	#stich2{
+		right: 0;
+	}
+	.navName{
+		width: 100%;
+	}
+	.linkName{
+		font-size: 1.3rem;
+		margin-top: 0.7rem;
+		margin-right: 1.5rem;
+	}
+	.linkName > .one{
+		font-size: 1rem;
+	}
+	.linkName > .two{
+		font-size: 1.3rem;
+	}
+	.linkName:hover{
+		position: sticky;
+		transform: none;
+	}
+
+}
+
+
+/* FROM*/
+
+.container{
+	height: 100%;
+	margin: 0 auto;
+	width: 75vw;
+}
+form{
+	margin-top: 10rem;
+	display: flex;
+	flex-direction: column;
+}
+#title{
+	background-color: var(--thirdColor);
+	border: 0.15rem dotted var(--firstColor);
+	color: var(--firstColor);
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+	opacity: 0.86;
+	height: 1.8rem;
+	width: 100%;
+}
+#description{
+	background-color: var(--thirdColor);
+	border: 0.15rem dotted var(--firstColor);
+	color: var(--firstColor);
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+	opacity: 0.86;
+	height: 16rem;
+	width: 100%;
+}
+
+#title:focus, #description:focus{
+	opacity: 1;
+	outline: none;
+}
+.submit{
+	align-self: flex-end;
+	background-color: var(--fourthColor);
+	border: 0.15rem dotted var(--firstColor);
+	color: #fff;
+	font-size: 1.5rem;
+	font-family: monospace;
+	height: 3rem;
+	width: 10rem;
+}
+::placeholder{
+	color: var(--firstColor);
+	font-size: 1.3rem;
+}
+
+
+/* NOTE */
+
+.noteBody{
+	background-color: var(--thirdColor);
+	border: 0.15rem dotted var(--firstColor);
+	margin-top: 3rem;
+	position: relative;
+}
+.noteTitle{
+	border-bottom: 0.15rem dotted var(--firstColor);
+	color: var(--firstColor);
+	font-size: 1.8rem;
+	height: 2.5rem;
+	padding-left: 0.5rem;
+}
+.noteDescription{
+	color: var(--firstColor);
+	box-sizing: border-box;
+	font-size: 1.5rem;
+	height: auto;
+	overflow-wrap: break-word;
+	padding: 1rem;
+	width: 100%;
+}
+.deleteNote{
+	height: 2rem;
+	margin-top: 0.5rem;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	text-decoration: none;
+}

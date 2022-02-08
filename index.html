@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Notemaker</title>
+	<link rel="shortcut icon" href="./img/iconStich.png">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<!-- NAV -->
+	<main class="home">
+		<nav class="navbar">
+			<ul class="navName">
+				<li>
+					<a class="linkName" href="#">Notemaker<span class="one">by</span><span class="two">Alejandro Godoy</span></a>
+				</li>
+
+				<img src="./img/iconStich.png" alt="Stich" id="stich" class="stich">
+				<ul class="navItems">
+					<li>
+						<a href="#">Home</a>
+					</li>
+					<li>
+						
+						<a href="https://www.linkedin.com/in/alejandrogodoyoficial" target="_blank">LinkedIn</a>
+					</li>
+					<li>
+						<a href="https://github.com/alejandrogodoyoficial" target="_blank">GitHub</a>
+					</li>
+				</ul>
+			</ul>
+			<img src="./img/iconStich2.png" alt="Stich black and write" id="stich2" class="stich2">
+		</nav>
+
+		<!-- FORM -->
+
+		<div class="container">
+			<form id="formNote">
+				<div class="form-group">
+					<input type="text" id="title" placeholder="Title" class="form-control">
+				</div>
+				<div class="form-group">
+					<textarea id="description" placeholder="Description" cols="30" rows="10" class="form-control"></textarea>
+				</div>
+				<input type="submit" class="submit" value="Save"></input>
+			</form>
+
+			<div id="notes"></div>
+		</div>
+
+	</main>
+
+
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
