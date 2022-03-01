@@ -143,6 +143,7 @@ nav{
 		right: 0;
 	}
 	.navName{
+		height: 5rem;
 		width: 100%;
 	}
 	.linkName{
