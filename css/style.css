@@ -148,7 +148,7 @@ img#stich2{
 		width: 100%;
 	}
 	.linkName{
-		font-size: 2.7rem;
+		font-size: 2rem;
 		margin-top: 0.7rem;
 		margin-right: 1.5rem;
 	}
@@ -156,7 +156,7 @@ img#stich2{
 		font-size: 2rem;
 	}
 	.linkName > .two{
-		font-size: 2.7rem;
+		font-size: 2rem;
 	}
 	.linkName:hover{
 		position: sticky;
@@ -173,7 +173,7 @@ img#stich2{
 		height: 80px;
 	}
 	textarea#description{
-		height: 50rem;
+		height: 30rem;
 	}
 	input::placeholder, textarea::placeholder{
 		font-size: 2rem;
