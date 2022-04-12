@@ -83,21 +83,19 @@ nav{
 	transform: rotateY(45deg) scale(1.4);
 }
 
-@media (min-width: 1200px){
-	img#stich{
-		display: none;
-		position: absolute;
-		right: 1rem;
-		top: 0;
-		width: 3rem;
+img#stich{
+	display: none;
+	position: absolute;
+	right: 1rem;
+	top: 0;
+	width: 3rem;
 }
-	img#stich2{
-		display: none;
-		position: absolute;
-		right: 1rem;
-		top: 0;
-		width: 3rem;
-	}
+img#stich2{
+	display: none;
+	position: absolute;
+	right: 1rem;
+	top: 0;
+	width: 3rem;
 }
 @media(max-width: 1200px){
 	[alt="Stich"]{
@@ -135,7 +133,10 @@ nav{
 	}
 }
 
-@media(max-width: 680px){
+@media(max-width: 900px){
+	.home{
+		width: 100vw;
+	}
 	[alt="Stich"]{
 		right: 0;
 	}
@@ -147,19 +148,35 @@ nav{
 		width: 100%;
 	}
 	.linkName{
-		font-size: 1.3rem;
+		font-size: 2.7rem;
 		margin-top: 0.7rem;
 		margin-right: 1.5rem;
 	}
 	.linkName > .one{
-		font-size: 1rem;
+		font-size: 2rem;
 	}
 	.linkName > .two{
-		font-size: 1.3rem;
+		font-size: 2.7rem;
 	}
 	.linkName:hover{
 		position: sticky;
 		transform: none;
+	}
+	div.container{
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 1rem;
+		width: 95vw;
+	}
+	input#title{
+		height: 80px;
+	}
+	textarea#description{
+		height: 50rem;
+	}
+	input::placeholder, textarea::placeholder{
+		font-size: 2rem;
 	}
 
 }
